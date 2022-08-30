@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script defer src="js/main.js"></script>
+    <script defer src="js/slider.js"></script>
+    <script defer src="js/tabs.js"></script>
+    <script defer src="js/accordion.js"></script>
+</head>
+<body>
+   <header class="header">
+        <div class="container header__container">
+            <div class="header__burger">
+                <span class="header__burger-icon">
+                    <svg width="30" height="23" viewBox="0 0 30 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="30" height="3" fill="black"/>
+                        <rect y="10" width="30" height="3" fill="black"/>
+                        <rect y="20" width="30" height="3" fill="black"/>
+                    </svg>
+                </span>
+            </div>
+            <a href="" class="header__logo">
+                <img src="images/logo.png" alt="Логотип">
+            </a>
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item">
+                        <a href="#" class="header__nav-link">О нас</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#" class="header__nav-link">Проекты</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#" class="header__nav-link">Этапы</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#" class="header__nav-link">Отзывы</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#" class="header__nav-link">Контакты</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <button href="#" class="header__search">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="7.56126" height="1.89031" transform="matrix(0.713342 0.700816 -0.713342 0.700816 18.6062 17.3762)" fill="#333333"/>
+                                <path d="M20.9303 10.7726C20.9303 16.1533 16.4855 20.5452 10.9652 20.5452C5.44478 20.5452 1 16.1533 1 10.7726C1 5.39198 5.44478 1 10.9652 1C16.4855 1 20.9303 5.39198 20.9303 10.7726Z" stroke="#333333" stroke-width="2"/>
+                            </svg>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__search-mobile">
+                <button href="#" class="header__search">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="7.56126" height="1.89031" transform="matrix(0.713342 0.700816 -0.713342 0.700816 18.6062 17.3762)" fill="#333333"/>
+                        <path d="M20.9303 10.7726C20.9303 16.1533 16.4855 20.5452 10.9652 20.5452C5.44478 20.5452 1 16.1533 1 10.7726C1 5.39198 5.44478 1 10.9652 1C16.4855 1 20.9303 5.39198 20.9303 10.7726Z" stroke="#333333" stroke-width="2"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="header__search-modal">
+                <input placeholder="Что будем искать?" type="text" class="header__search-modal-input">
+                <span class="header__search-modal-search">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="7.56126" height="1.89031" transform="matrix(0.713342 0.700816 -0.713342 0.700816 18.6062 17.3762)" fill="#333333"/>
+                        <path d="M20.9303 10.7726C20.9303 16.1533 16.4855 20.5452 10.9652 20.5452C5.44478 20.5452 1 16.1533 1 10.7726C1 5.39198 5.44478 1 10.9652 1C16.4855 1 20.9303 5.39198 20.9303 10.7726Z" stroke="#333333" stroke-width="2"/>
+                    </svg>
+                </span>
+                <span class="header__search-modal-close">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="8.95386" y="7.30435" width="11.6645" height="2.33291" transform="rotate(45 8.95386 7.30435)" fill="#999999"/>
+                        <rect x="7.30432" y="15.5524" width="11.6645" height="2.33291" transform="rotate(-45 7.30432 15.5524)" fill="#999999"/>
+                        <circle cx="12" cy="12" r="11" stroke="#999999" stroke-width="2"/>
+                    </svg>
+                </span>
+            </div>
+            <nav class="header__nav-mobile">
+                <span class="header__nav-mobile-close">
+                    <svg width="23" height="25" viewBox="0 0 23 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.09082 0.03125L22.9999 22.0294L20.909 24.2292L-8.73579e-05 2.23106L2.09082 0.03125Z" fill="#333333"/>
+                        <path d="M0 22.0295L20.9091 0.0314368L23 2.23125L2.09091 24.2294L0 22.0295Z" fill="#333333"/>
+                    </svg>
+                </span>
+                <ul class="header__nav-mobile-list">
+                    <li class="header__nav-mobile-item">
+                        <a href="#" class="header__nav-mobile-link">О нас</a>
+                    </li>
+                    <li class="header__nav-mobile-item">
+                        <a href="#" class="header__nav-mobile-link">Проекты</a>
+                    </li>
+                    <li class="header__nav-mobile-item">
+                        <a href="#" class="header__nav-mobile-link">Этапы</a>
+                    </li>
+                    <li class="header__nav-mobile-item">
+                        <a href="#" class="header__nav-mobile-link">Отзывы</a>
+                    </li>
+                    <li class="header__nav-mobile-item">
+                        <a href="#" class="header__nav-mobile-link">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+   </header>
+
+   <main>
+        <section class="section-hero">
+            <div class="container section-hero__container">
+                <div class="section-hero__content">
+                    <div class="slider">
+                        <div class="slider__item" data-path="slide-one"></div>
+                        <div class="slider__item" data-path="slide-two"></div>
+                        <div class="slider__item" data-path="slide-three"></div>
+                        <div class="slider__content">
+                            <h1 class="slider__heading">Проектные решения любой сложности</h1>
+                            <p class="slider__description">Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день остаются уделом проектантов</p>
+                            <button class="button slider__button">Заказать расчёт</button>
+                        </div>
+                        <div class="slider__dots">
+                            <span class="slider__dots-item slider__dots-active"></span>
+                            <span class="slider__dots-item"></span>
+                            <span class="slider__dots-item"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section-about">
+            <div class="container section-about__container">
+                <h2 class="heading section-about__heading">О нас</h2>
+                <p class="description section-about__description">Также как перспективное планирование создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с учётом комплекса экспериментов, поражающих по своей масштабности и грандиозности. А также диаграммы связей могут быть описаны максимально подробно. Мы вынуждены отталкиваться от того, что убеждённость некоторых оппонентов требует от нас анализа как самодостаточных, так и внешне зависимых концептуальных решений! Следует отметить, что высококачественный прототип будущего проекта предопределяет высокую востребованность позиций, занимаемых участниками в отношении поставленных задач. Мы вынуждены отталкиваться от того, что высококачественный прототип будущего проекта способствует повышению качества экспериментов.</p>
+                <div class="section-about__row">
+                    <div class="section-about__column">
+                        <div class="section-about__image">
+                            <div class="section-about__background">
+                                <p class="description section-about__background-description">Принимая во внимание показатели успешности, перспективное планирование способствует подготовке и реализации новых принципов.</p>
+                                <button class="section-about__background-button">Подробнее</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-about__mobile-background">
+                        <p class="description section-about__background-description">Принимая во внимание показатели успешности, перспективное планирование способствует подготовке и реализации новых принципов.</p>
+                        <button class="section-about__background-button">Подробнее</button>
+                    </div>
+                    <div class="section-about__column">
+                        <div class="section-about__item">
+                            <div class="section-about__item-img ">
+                                <div class="section-about_img-first"></div>
+                            </div>
+                            <div class="section-about__item-content">
+                                <h3 class="second-heading section-about__item-heading">Консультация с широким активом</h3>
+                                <p class="description section-about__item-description">А также свежий взгляд на привычные вещи - безусловно открывает новые горизонты для как самодостаточных, так и внешне зависимых концептуальных решений.</p>
+                            </div>
+                        </div>
+                        <div class="section-about__item">
+                            <div class="section-about__item-img">
+                                <div class="section-about_img-second"></div>
+                            </div>
+                            <div class="section-about__item-content">
+                                <h3 class="second-heading section-about__item-heading">В своём стремлении повысить </h3>
+                                <p class="description section-about__item-description">Качество жизни, они забывают, что сплочённость команды профессионалов представляет собой интересный эксперимент проверки прогресса профессионального сообщества. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-working">
+            <div class="container section-working__container">
+                <h2 class="heading section-working__heading">Как мы работаем</h2>
+                <ul class="section-working__list">
+                    <li class="section-working__item">
+                        <span class="section-working__item-link section-working__link-active" data-path="step-one">1 шаг</span> 
+                    </li>
+                    <li class="section-working__item">
+                        <span class="section-working__item-link" data-path="step-two">2 шаг</span> 
+                    </li>
+                    <li class="section-working__item">
+                        <span class="section-working__item-link" data-path="step-three">3 шаг</span>  
+                    </li>
+                    <li class="section-working__item">
+                        <span class="section-working__item-link" data-path="step-four">4 шаг</span>  
+                    </li>
+                </ul>
+                <div class="section-working__row section-working__row-active" data-target="step-one">
+                    <div class="section-working__column">
+                        <div class="section-working_column-item">
+                            <h3 class="second-heading section-working__item-heading">Проводим консультацию</h3>
+                            <p class="description section-working__description">Влечет за собой процесс внедрения и модернизации приоритизации разума над эмоциями. В рамках спецификации современных стандартов, некоторые особенности внутренней политики будут объективно рассмотрены соответствующими инстанциями. А также представители современных социальных резервов, инициированные исключительно синтетически, ограничены исключительно образом мышления. Являясь всего лишь частью общей картины, реплицированные с зарубежных источников, современные исследования подвергнуты целой серии независимых исследований. Кстати,  стремящиеся вытеснить традиционное производство, нанотехнологии освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, призваны к ответу.</p>
+                        </div>
+                        <div class="section-working_column-item">
+                            <button class="button section-working__btn-one"> Подробнее</button>
+                            <button class="section-working__btn-two">Договор</button>
+                        </div>
+                    </div>
+                    <div class="section-working__column">
+                        <div class="section-working__image"></div>
+                    </div>
+                </div>
+                <div class="section-working__row" data-target="step-two">
+                    <div class="section-working__column">
+                        <div class="section-working_column-item">
+                            <h3 class="second-heading section-working__item-heading">Составляем смету</h3>
+                            <p class="description section-working__description">Внедрения и модернизации приоритизации разума над эмоциями. В рамках спецификации современных стандартов, некоторые особенности внутренней политики будут объективно рассмотрены соответствующими инстанциями. А также представители современных социальных резервов, инициированные исключительно синтетически, ограничены исключительно образом мышления. Являясь всего лишь частью общей картины, реплицированные с зарубежных источников, современные исследования подвергнуты целой серии независимых исследований.</p>
+                        </div>
+                        <div class="section-working_column-item">
+                            <button class="button section-working__btn-one"> Подробнее</button>
+                            <button class="section-working__btn-two">Договор</button>
+                        </div>
+                    </div>
+                    <div class="section-working__column">
+                        <div class="section-working__image"></div>
+                    </div>
+                </div>
+                <div class="section-working__row" data-target="step-three">
+                    <div class="section-working__column">
+                        <div class="section-working_column-item">
+                            <h3 class="second-heading section-working__item-heading">Привлекаем подрядчиков</h3>
+                            <p class="description section-working__description">Идейные соображения высшего порядка, а также новая модель организационной деятельности требует анализа прогресса профессионального сообщества. Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: высококачественный прототип будущего проекта напрямую зависит от дальнейших направлений развития. Разнообразный и богатый опыт говорит нам, что новая модель организационной деятельности говорит о возможностях системы массового участия. Принимая во внимание показатели успешности, постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет выполнить важные задания по разработке прогресса профессионального сообщества.</p>
+                        </div>
+                        <div class="section-working_column-item">
+                            <button class="button section-working__btn-one"> Подробнее</button>
+                            <button class="section-working__btn-two">Договор</button>
+                        </div>
+                    </div>
+                    <div class="section-working__column">
+                        <div class="section-working__image"></div>
+                    </div>
+                </div>
+                <div class="section-working__row" data-target="step-four">
+                    <div class="section-working__column">
+                        <div class="section-working_column-item">
+                            <h3 class="second-heading section-working__item-heading">Инспектируем все этапы работ</h3>
+                            <p class="description section-working__description">Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: высококачественный прототип будущего проекта напрямую зависит от дальнейших направлений развития. Разнообразный и богатый опыт говорит нам, что новая модель организационной деятельности говорит о возможностях системы массового участия. Принимая во внимание показатели успешности, постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет.</p>
+                        </div>
+                        <div class="section-working_column-item">
+                            <button class="button section-working__btn-one"> Подробнее</button>
+                            <button class="section-working__btn-two">Договор</button>
+                        </div>
+                    </div>
+                    <div class="section-working__column">
+                        <div class="section-working__image"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-questions">
+            <div class="container section-questions__container">
+                <h2 class="heading section-questions__heading">Часто задаваемые вопросы</h2>
+                <div class="section-questions__accordion">
+                    <ul class="section-questions__list">
+                        <li class="section-questions__item">
+                            <div class="section-questions__item-title">
+                                <h3 class="section-questions__item-heading"> Из чего формируется конечная стоимость проекта?</h3>
+                                <span class="section-questions__item-plus" data-path="accordion-one">
+                                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="25" cy="25" fill="#ECECEC" r="25"/><path fill-rule="evenodd" clip-rule="evenodd" d="M25.057 24.057V9h.886v15.057H41v.886H25.943V40h-.886V24.943H10v-.886h15.057z" fill="#666"/></svg>
+                                </span>
+                            </div>
+                            <div class="section-questions__item-description" data-target="accordion-one">
+                                <p class="section-questions__item-content description">Являясь всего лишь частью общей картины, непосредственные участники технического прогресса призывают нас к новым свершениям, которые, в свою очередь, должны быть своевременно верифицированы. Но высококачественный прототип будущего проекта является качественно новой ступенью первоочередных требований. А ещё некоторые особенности внутренней политики, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. И нет сомнений, что явные признаки победы институционализации призывают нас к новым свершениям, которые, в свою очередь, должны быть указаны как претенденты на роль ключевых факторов.</p>
+                                <p class="section-questions__item-content description">Приятно, граждане, наблюдать, как некоторые особенности внутренней политики могут быть призваны к ответу. Явные признаки победы институционализации набирают популярность среди определенных слоев населения, а значит, должны быть объединены в целые кластеры себе подобных. Банальные, но неопровержимые выводы, а также многие известные личности призывают нас к новым свершениям, которые, в свою очередь, должны быть представлены в исключительно положительном свете.</p>
+                            </div>
+                        </li>
+                        <li class="section-questions__item">
+                            <div class="section-questions__item-title">
+                                <h3 class="section-questions__item-heading">У меня есть свой проект. Сможем ли мы его доработать / реализовать?</h3>
+                                <span class="section-questions__item-plus" data-path="accordion-two">
+                                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="25" cy="25" fill="#ECECEC" r="25"/><path fill-rule="evenodd" clip-rule="evenodd" d="M25.057 24.057V9h.886v15.057H41v.886H25.943V40h-.886V24.943H10v-.886h15.057z" fill="#666"/></svg>
+                                </span>
+                            </div>
+                            <div class="section-questions__item-description" data-target="accordion-two">
+                                <p class="section-questions__item-content description">Являясь всего лишь частью общей картины, непосредственные участники технического прогресса призывают нас к новым свершениям, которые, в свою очередь, должны быть своевременно верифицированы. Но высококачественный прототип будущего проекта является качественно новой ступенью первоочередных требований. А ещё некоторые особенности внутренней политики, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. И нет сомнений, что явные признаки победы институционализации призывают нас к новым свершениям, которые, в свою очередь, должны быть указаны как претенденты на роль ключевых факторов.</p>
+                                <p class="section-questions__item-content description">Приятно, граждане, наблюдать, как некоторые особенности внутренней политики могут быть призваны к ответу. Явные признаки победы институционализации набирают популярность среди определенных слоев населения, а значит, должны быть объединены в целые кластеры себе подобных. Банальные, но неопровержимые выводы, а также многие известные личности призывают нас к новым свершениям, которые, в свою очередь, должны быть представлены в исключительно положительном свете.</p>
+                            </div>
+                        </li>
+                        <li class="section-questions__item">
+                            <div class="section-questions__item-title">
+                                <h3 class="section-questions__item-heading">Я выбираю между разными компаниями. В чём ваше отличие?</h3>
+                                <span class="section-questions__item-plus" data-path="accordion-three">
+                                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="25" cy="25" fill="#ECECEC" r="25"/><path fill-rule="evenodd" clip-rule="evenodd" d="M25.057 24.057V9h.886v15.057H41v.886H25.943V40h-.886V24.943H10v-.886h15.057z" fill="#666"/></svg>
+                                </span>
+                            </div>
+                            <div class="section-questions__item-description" data-target="accordion-three">
+                                <p class="section-questions__item-content description">Являясь всего лишь частью общей картины, непосредственные участники технического прогресса призывают нас к новым свершениям, которые, в свою очередь, должны быть своевременно верифицированы. Но высококачественный прототип будущего проекта является качественно новой ступенью первоочередных требований. А ещё некоторые особенности внутренней политики, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. И нет сомнений, что явные признаки победы институционализации призывают нас к новым свершениям, которые, в свою очередь, должны быть указаны как претенденты на роль ключевых факторов.</p>
+                                <p class="section-questions__item-content description">Приятно, граждане, наблюдать, как некоторые особенности внутренней политики могут быть призваны к ответу. Явные признаки победы институционализации набирают популярность среди определенных слоев населения, а значит, должны быть объединены в целые кластеры себе подобных. Банальные, но неопровержимые выводы, а также многие известные личности призывают нас к новым свершениям, которые, в свою очередь, должны быть представлены в исключительно положительном свете.</p>
+                            </div>
+                        </li>
+                        <li class="section-questions__item">
+                            <div class="section-questions__item-title">
+                                <h3 class="section-questions__item-heading">Могу ли я делегировать вам работу / согласование с подрядчиком / организацией?</h3>
+                                <span class="section-questions__item-plus" data-path="accordion-four">
+                                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="25" cy="25" fill="#ECECEC" r="25"/><path fill-rule="evenodd" clip-rule="evenodd" d="M25.057 24.057V9h.886v15.057H41v.886H25.943V40h-.886V24.943H10v-.886h15.057z" fill="#666"/></svg>
+                                </span>
+                            </div>
+                            <div class="section-questions__item-description" data-target="accordion-four">
+                                <p class="section-questions__item-content description">Являясь всего лишь частью общей картины, непосредственные участники технического прогресса призывают нас к новым свершениям, которые, в свою очередь, должны быть своевременно верифицированы. Но высококачественный прототип будущего проекта является качественно новой ступенью первоочередных требований. А ещё некоторые особенности внутренней политики, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. И нет сомнений, что явные признаки победы институционализации призывают нас к новым свершениям, которые, в свою очередь, должны быть указаны как претенденты на роль ключевых факторов.</p>
+                                <p class="section-questions__item-content description">Приятно, граждане, наблюдать, как некоторые особенности внутренней политики могут быть призваны к ответу. Явные признаки победы институционализации набирают популярность среди определенных слоев населения, а значит, должны быть объединены в целые кластеры себе подобных. Банальные, но неопровержимые выводы, а также многие известные личности призывают нас к новым свершениям, которые, в свою очередь, должны быть представлены в исключительно положительном свете.</p>
+                            </div>
+                        </li>
+                        
+                        <li class="section-questions__item">
+                            <div class="section-questions__item-title">
+                                <h3 class="section-questions__item-heading">Могу ли я вернуть деньги на каком-либо из этапов работ?</h3>
+                                <span class="section-questions__item-plus" data-path="accordion-five">
+                                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="25" cy="25" fill="#ECECEC" r="25"/><path fill-rule="evenodd" clip-rule="evenodd" d="M25.057 24.057V9h.886v15.057H41v.886H25.943V40h-.886V24.943H10v-.886h15.057z" fill="#666"/></svg>
+                                </span>
+                            </div>
+                            <div class="section-questions__item-description" data-target="accordion-five">
+                                <p class="section-questions__item-content description">Являясь всего лишь частью общей картины, непосредственные участники технического прогресса призывают нас к новым свершениям, которые, в свою очередь, должны быть своевременно верифицированы. Но высококачественный прототип будущего проекта является качественно новой ступенью первоочередных требований. А ещё некоторые особенности внутренней политики, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. И нет сомнений, что явные признаки победы институционализации призывают нас к новым свершениям, которые, в свою очередь, должны быть указаны как претенденты на роль ключевых факторов.</p>
+                                <p class="section-questions__item-content description">Приятно, граждане, наблюдать, как некоторые особенности внутренней политики могут быть призваны к ответу. Явные признаки победы институционализации набирают популярность среди определенных слоев населения, а значит, должны быть объединены в целые кластеры себе подобных. Банальные, но неопровержимые выводы, а также многие известные личности призывают нас к новым свершениям, которые, в свою очередь, должны быть представлены в исключительно положительном свете.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+   </main>
+
+   <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__row">
+                <div class="footer__column">
+                    <div class="footer__nav">
+                        <a href="#" class="footer__logo">
+                            <img src="images/logo_footer.png" alt="Логотип">
+                        </a>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="#" class="footer__item-link">О нас</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__item-link">Проекты</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__item-link">Отзывы</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__item-link">Договор оферты</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__item-link">Договор подряда</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__item-link">Конфиденциальность</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__item-link">Партнёрское соглашение</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__icons">
+                        <a href="#" class="footer__icon footer__facebook"><svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M30 0C13.5 0 0 13.524 0 30.18 0 45.242 10.98 57.742 25.32 60V38.916H17.7V30.18h7.62v-6.657c0-7.56 4.47-11.717 11.34-11.717 3.27 0 6.69.572 6.69.572v7.44h-3.78c-3.72 0-4.89 2.32-4.89 4.7v5.662h8.34l-1.35 8.735h-6.99V60a29.97 29.97 0 0018.15-10.21A30.192 30.192 0 0060 30.18C60 13.525 46.5 0 30 0z" fill="#7C7C7C"/></svg></a>
+                        <a href="#" class="footer__icon footer__vk"><svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M30 0C13.432 0 0 13.431 0 30c0 16.569 13.432 30 30 30 16.568 0 30-13.431 30-30C60 13.431 46.568 0 30 0zm15.218 33.245c1.398 1.365 2.877 2.65 4.132 4.158.556.666 1.08 1.355 1.48 2.13.57 1.106.055 2.319-.935 2.384l-6.146-.001c-1.587.131-2.85-.509-3.915-1.594-.85-.865-1.639-1.789-2.458-2.683-.334-.367-.687-.713-1.106-.985-.838-.545-1.566-.378-2.046.497-.49.891-.601 1.878-.648 2.87-.067 1.449-.504 1.827-1.958 1.895-3.107.146-6.055-.325-8.795-1.892-2.418-1.382-4.288-3.332-5.919-5.54-3.174-4.304-5.606-9.027-7.79-13.887-.492-1.094-.132-1.68 1.075-1.703 2.006-.038 4.012-.033 6.018-.002.816.013 1.357.48 1.67 1.25 1.084 2.668 2.413 5.205 4.078 7.559.444.626.897 1.251 1.542 1.694.712.488 1.255.327 1.59-.468.215-.505.308-1.045.355-1.587.16-1.854.178-3.708-.098-5.555-.172-1.155-.822-1.902-1.974-2.12-.587-.111-.5-.329-.215-.664.495-.58.96-.938 1.887-.938l6.944-.001c1.094.215 1.34.706 1.488 1.808l.006 7.717c-.013.427.215 1.691.98 1.97.614.203 1.02-.29 1.386-.678 1.666-1.767 2.852-3.853 3.915-6.012.469-.951.873-1.937 1.266-2.924.292-.73.746-1.089 1.57-1.076l6.687.008c.197 0 .397.002.592.035 1.127.193 1.436.678 1.088 1.777-.55 1.727-1.615 3.166-2.658 4.609-1.117 1.544-2.308 3.034-3.414 4.585-1.017 1.418-.936 2.132.326 3.364z" fill="#7C7C7C"/></svg></a>
+                        <a href="#" class="footer__icon footer__instagram"><svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24.258 30a5.742 5.742 0 1011.484 0 5.742 5.742 0 00-11.484 0z" fill="#7C7C7C"/><path d="M16.571 19.84a5.338 5.338 0 011.289-1.98 5.334 5.334 0 011.98-1.289c.607-.236 1.52-.516 3.199-.593 1.817-.083 2.361-.1 6.961-.1s5.145.017 6.961.1c1.68.077 2.592.357 3.199.593a5.33 5.33 0 011.98 1.289 5.34 5.34 0 011.29 1.98c.235.607.516 1.52.592 3.2.083 1.816.1 2.36.1 6.96s-.017 5.145-.1 6.962c-.076 1.68-.357 2.591-.593 3.198a5.34 5.34 0 01-1.288 1.98 5.333 5.333 0 01-1.98 1.29c-.608.236-1.52.516-3.2.593-1.816.082-2.36.1-6.96.1-4.601 0-5.146-.018-6.962-.1-1.68-.077-2.592-.358-3.199-.594a5.705 5.705 0 01-3.269-3.269c-.236-.607-.516-1.519-.593-3.198-.083-1.817-.1-2.362-.1-6.962s.017-5.144.1-6.96c.076-1.68.357-2.593.593-3.2zM30 38.846a8.846 8.846 0 100-17.692A8.846 8.846 0 0021.154 30 8.846 8.846 0 0030 38.846zm-9.196-15.974a2.067 2.067 0 100-4.135 2.067 2.067 0 000 4.135z" fill="#7C7C7C"/><path d="M30 0c16.566 0 30 13.434 30 30 0 16.566-13.434 30-30 30C13.434 60 0 46.566 0 30 0 13.434 13.434 0 30 0zM12.877 37.102c.084 1.834.375 3.086.801 4.182a8.808 8.808 0 005.038 5.038c1.096.426 2.348.717 4.181.8 1.837.084 2.424.105 7.103.105 4.678 0 5.265-.02 7.102-.104 1.834-.084 3.086-.375 4.181-.801a8.44 8.44 0 003.052-1.987 8.445 8.445 0 001.987-3.051c.425-1.096.717-2.348.8-4.181.085-1.838.105-2.425.105-7.103s-.02-5.265-.104-7.102c-.084-1.834-.375-3.086-.8-4.182a8.44 8.44 0 00-1.988-3.05 8.44 8.44 0 00-3.051-1.988c-1.096-.426-2.348-.717-4.182-.8-1.837-.084-2.424-.105-7.102-.105-4.678 0-5.265.02-7.102.105-1.834.083-3.086.374-4.182.8a8.445 8.445 0 00-3.051 1.987 8.44 8.44 0 00-1.987 3.051c-.426 1.096-.717 2.348-.801 4.182-.084 1.837-.104 2.424-.104 7.102 0 4.678.02 5.265.104 7.102z" fill="#7C7C7C"/></svg></a>
+                    </div>
+                </div>
+                <div class="footer__column">
+                    <h2 class="heading footer__heading">Оставить заявку</h2>
+                    <form class="footer__form">
+                        <div class="footer__form-input">
+                            <input type="text" name="name" placeholder="Фамилия, имя и отчество*" class="footer__input-name">
+                        </div>
+                        <div class="footer__form-input">
+                            <input type="email" name="email" placeholder="E-mail*" class="footer__input-email">
+                        </div>
+                        <div class="footer__form-input">
+                            <textarea name="message" placeholder="Сообщение" class="footer__form-message"></textarea>
+                        </div>
+                        <div class="footer__form-send">
+                            <button class="button footer__form-btn">Отправить данные</button>
+                            <label class="footer__form-label">
+                                <input type="checkbox" class="footer__disabled-checkbox">
+                                Согласен на обработку данных
+                                <span class="footer__form-checkbox"></span>
+                            </label>
+                        </div>
+                        
+                    </form>
+                </div>
+                <div class="footer__column">
+                    <p class="description footer__description">Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: разбавленное изрядной долей эмпатии, рациональное мышление позволяет оценить значение модели развития. Таким образом, консультация с широким активом обеспечивает широкому кругу (специалистов) участие в формировании стандартных подходов. </p>
+                </div>
+            </div>
+        </div>
+   </footer>
+</body>
+</html>
