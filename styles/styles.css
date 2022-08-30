@@ -838,9 +838,6 @@ body {
 }
 @media (max-width: 1023px) {
     .container {
-        max-width: 768px;
-        margin-right: auto;
-        margin-left: auto;
         padding: 0 50px;
     }
     /*header*/
@@ -930,9 +927,6 @@ body {
 }
 @media (max-width: 767px) {
     .container {
-        max-width: 320px;
-        margin-right: auto;
-        margin-left: auto;
         padding: 0 15px;
     }
     .heading {
